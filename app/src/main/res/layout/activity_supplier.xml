@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SupplierActivity"
+    android:background="@drawable/mad3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_Pro_Back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:contentDescription="Go Back"
+                android:textAlignment="viewStart"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="700px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center_horizontal"
+            android:text="ADD SUPPLIER PRODUCTS"
+            android:textColor="#000000"
+            android:textSize="45sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="80px"
+            android:fontFamily="@font/armata"
+            android:text="Sprinkles Cupcake: Elevate Your Menu with Quality Supplier Products"
+            android:textAlignment="center"
+            android:textColor="#323131"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130px"
+                    android:gravity="center_horizontal"
+                    android:text="Add Products"
+                    android:textColor="#000000"
+                    android:textSize="34sp" />
+
+                <EditText
+                    android:id="@+id/txt_Pro_Id"
+                    style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+
+                    android:layout_marginTop="50px"
+                    android:backgroundTint="#2196F3"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="ENTER  PRODUCT ID"
+                    android:inputType="text"
+                    android:paddingVertical="50px"
+                    android:paddingLeft="50px"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#8F8484" />
+
+                <EditText
+                    android:id="@+id/txt_Pro_Name"
+                    style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+
+                    android:backgroundTint="#2196F3"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="ENTER  PRODUCT NAME"
+                    android:inputType="text"
+                    android:paddingVertical="50px"
+                    android:paddingLeft="50px"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#8F8484" />
+
+                <EditText
+                    android:id="@+id/txt_Pro_Quantity"
+                    style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+
+                    android:backgroundTint="#2196F3"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="ENTER  QUANTITY"
+                    android:inputType="text"
+                    android:paddingVertical="50px"
+                    android:paddingLeft="50px"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#8F8484" />
+
+                <EditText
+                    android:id="@+id/txt_pro_Price"
+                    style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+
+                    android:backgroundTint="#2196F3"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="ENTER  UNIT PRICE"
+                    android:inputType="text"
+                    android:paddingVertical="50px"
+                    android:paddingLeft="50px"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#8F8484" />
+
+                <Button
+                    android:id="@+id/btn_Pro_Add"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100px"
+                    android:layout_marginBottom="100px"
+                    android:backgroundTint="#8F62DF"
+                    android:backgroundTintMode="add"
+                    android:fontFamily="@font/armata"
+                    android:padding="70px"
+                    android:text="ADD PRODUCT"
+                    android:textAlignment="center"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#8F8484"
+                    android:textSize="20sp"
+                    app:cornerRadius="30px" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

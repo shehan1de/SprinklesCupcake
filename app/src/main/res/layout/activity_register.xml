@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@drawable/mad3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_Cup_Back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="68dp"
+                android:layout_height="59dp"
+                android:contentDescription="Go Back"
+                android:textAlignment="viewStart"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+            <Button
+                android:id="@+id/btn_L_Register"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:fontFamily="@font/armata"
+                android:text="Login"
+                android:textAlignment="viewEnd"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="50px"
+            android:fontFamily="@font/armata"
+            android:paddingLeft="40px"
+            android:text="SIGN IN"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="350px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:text="Sign in to access your account securely. Welcome back!"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txt_L_UserId"
+            style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:fontFamily="@font/armata"
+            android:hint="ENTER  USER ID"
+            android:inputType="text"
+            android:paddingVertical="50px"
+            android:paddingLeft="50px"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="#8F8484" />
+
+        <EditText
+            android:id="@+id/txt_R_UserName"
+            style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:fontFamily="@font/armata"
+            android:hint="ENTER  USER NAME"
+            android:inputType="text"
+            android:paddingVertical="50px"
+            android:paddingLeft="50px"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="#8F8484" />
+
+        <EditText
+            android:id="@+id/txt_L_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:ems="10"
+            android:fontFamily="@font/armata"
+            android:hint="ENTER YOUR PASSWORD"
+            android:inputType="textPassword"
+            android:paddingVertical="50px"
+            android:paddingLeft="50px"
+            android:textColor="@color/black"
+            android:textColorHint="#8F8484" />
+
+        <EditText
+            android:id="@+id/txt_R_ConfirmPassword"
+            style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:fontFamily="@font/armata"
+            android:hint="CONFIRM PASSWORD"
+            android:inputType="text"
+            android:paddingVertical="50px"
+            android:paddingLeft="50px"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="#8F8484" />
+
+        <Button
+            android:id="@+id/btn_L_Login"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:backgroundTint="#8F62DF"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/armata"
+            android:padding="70px"
+            android:shadowColor="#D17D7D"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textColor="#FBFBFB"
+            android:textColorHint="#8F8484"
+            android:textSize="20sp"
+            app:cornerRadius="30px" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

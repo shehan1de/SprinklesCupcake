@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mad3"
+    android:foregroundTint="#FFFFFF"
+    tools:context=".Activity.UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_U_Back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="187dp"
+                android:layout_height="59dp"
+                android:layout_marginRight="200px"
+                android:layout_weight="1"
+                android:contentDescription="Go Back"
+                android:textAlignment="viewStart"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="500px"
+                android:layout_marginRight="100px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/armata"
+            android:text="DISCOVER "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="200px"
+            android:fontFamily="@font/armata"
+            android:text="Sweeten life's moments with our delectable cupcakes. Indulge in joy!"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdOreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="188dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginTop="100px"
+                    android:backgroundTint="#3A0B1B"
+                    android:foregroundGravity="clip_horizontal"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <!--      <ImageView
+                              android:id="@+id/imageView7"
+                              android:layout_width="100dp"
+                              android:layout_height="111dp"
+                              android:layout_gravity="left"
+                              app:srcCompat="@drawable/cupcake6" /> -->
+
+                    <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="272dp"
+                    android:layout_height="162dp"
+                    android:layout_gravity="right"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Oreo Cupcakes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdCreamy"
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="#FFFFFF"
+                android:backgroundTint="#E1CB0B"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <!--     <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="127dp"
+                        android:layout_height="118dp"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/cupcake3" /> -->
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="222dp"
+                        android:layout_height="143dp"
+                        android:layout_gravity="left"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Creamy Cupcakes "
+                        android:textColor="#FFFFFF"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdCherry"
+                        android:layout_width="match_parent"
+                        android:layout_height="188dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:backgroundTint="#838181"
+                        android:foregroundGravity="clip_horizontal"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <!--    <ImageView
+                               android:id="@+id/imageView11"
+                               android:layout_width="87dp"
+                               android:layout_height="115dp"
+                               android:layout_gravity="left"
+                               app:srcCompat="@drawable/cupcake5" /> -->
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="272dp"
+                        android:layout_height="162dp"
+                        android:layout_gravity="right"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Cherry Cupcakes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/cdSeason"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:backgroundTint="#C30C4A"
+                android:foregroundGravity="clip_horizontal"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                    <!--
+                                        <ImageView
+                                            android:id="@+id/imageView13"
+                                            android:layout_width="91dp"
+                                            android:layout_height="117dp"
+                                            android:layout_gravity="right"
+                                            app:srcCompat="@drawable/cupcake1" /> -->
+
+                                    <TextView
+                                        android:id="@+id/textView22"
+                                        android:layout_width="284dp"
+                                        android:layout_height="127dp"
+                                        android:layout_gravity="left"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="Seasonal Cupcakes "
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="29sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView25"
+                                        android:layout_width="284dp"
+                                        android:layout_height="175dp"
+                                        android:layout_gravity="left"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="(Offers Available)"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:id="@+id/textView30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="200px"
+                                        android:gravity="center_horizontal"
+                                        android:text="Submit your Feedback"
+                                        android:textColor="#000000"
+                                        android:textSize="34sp" />
+
+                                    <EditText
+                                        android:id="@+id/txt_U_Feedback"
+                                        style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="64dp"
+
+                                        android:backgroundTint="#2196F3"
+                                        android:ems="10"
+                                        android:fontFamily="@font/armata"
+                                        android:hint="ENTER  FEEDBACK"
+                                        android:inputType="text"
+                                        android:paddingVertical="50px"
+                                        android:paddingLeft="50px"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="#8F8484" />
+
+                                    <Button
+                                        android:id="@+id/btn_U_Submit"
+                                        android:layout_width="152dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="100px"
+                                        android:backgroundTint="#8F62DF"
+                                        android:backgroundTintMode="add"
+                                        android:fontFamily="@font/armata"
+                                        android:padding="70px"
+                                        android:text="SUBMIT"
+                                        android:textAlignment="center"
+                                        android:textColor="#FBFBFB"
+                                        android:textColorHint="#8F8484"
+                                        android:textSize="20sp"
+                                        app:cornerRadius="30px" />
+
+                                </LinearLayout>
+                        </ScrollView>
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
